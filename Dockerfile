@@ -1,3 +1,3 @@
   FROM tomcat:8.0
-	COPY gamutkart.war /usr/local/tomcat/webapps
-	ENTRYPOINT /usr/local/tomcat/bin/startup.sh && bash
+  COPY gamutkart.war /usr/local/tomcat/webapps
+  ENTRYPOINT /usr/local/tomcat/bin/startup.sh && bash
