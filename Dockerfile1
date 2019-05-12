@@ -7,4 +7,4 @@ RUN apt-get install openjdk-8-jdk -y
 ENV JAVA_HOME=/usr
 ADD apache-tomcat-8.5.38.zip /root
 COPY target/gamutkart.war /root/apache-tomcat-8.5.38/webapps
-ENTRYPOINT service nginx start && /root/apache-tomcat-8.5.38/bin/startup.sh && /bin/bash
+ENTRYPOINT service nginx start && /root/apache-tomcat-8.5.38/bin/startup.sh && /bin/sh
