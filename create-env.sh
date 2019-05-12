@@ -10,5 +10,3 @@ do
     echo "india@123456789" | sudo -S docker run --name www.gamutkart$i -d -it --rm rgulam94/png12 /bin/bash
     echo "www.gamutkart$i container has been created!"
 	echo "=============================="
-done
-echo "india@123456789" | sudo -S docker inspect --format {{.NetworkSettings.Networks.bridge.IPAddress}} `docker ps -a -q` > IPs.txt
