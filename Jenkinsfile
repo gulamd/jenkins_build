@@ -9,7 +9,7 @@ pipeline {
 	    }
 		stage('Build') {
 	        steps {
-				sh '/home/katty/Distros/apache-maven-3.6.0/bin/mvn install'
+				sh '/home/ubuntu/Distros/apache-maven-3.6.0/bin/mvn install'
 	        }
 		}
 		stage('Deployment') {
